@@ -1,0 +1,1 @@
+Adivinanza de señas: presenta una imagen de una señal y haz que el jugador adivine qué palabra o frase se asocia con ella.

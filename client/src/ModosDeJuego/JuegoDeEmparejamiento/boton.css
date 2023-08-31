@@ -1,0 +1,32 @@
+button {
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px 16px;
+  background-color: #423b5078;
+}
+
+.cont-ge{
+  text-align: center;
+}
+
+.btn-img-option-ge{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center
+}
+
+button > img{
+  width: 270px;
+  background-color: #423b5078;
+}
+
+button.correcta {
+  background-color: green;
+}
+
+button.incorrecta {
+  background-color: red;
+
+}

@@ -1,0 +1,19 @@
+.opt-btn-error-game{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  margin: 5px;
+}
+
+.opt-btn-error-game-false{
+  background-color: red;
+}
+
+.opt-btn-error-game-true{
+  background-color: green;
+}

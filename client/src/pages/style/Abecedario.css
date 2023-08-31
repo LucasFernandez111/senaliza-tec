@@ -1,0 +1,57 @@
+.home-page {
+  background-color: #151316;
+}
+
+.nav-bar {
+  height: 50px;
+}
+.card-section {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding: 30px;
+}
+
+.card {
+  border: 3px solid #de4a97;
+  padding: 1.75rem;
+  border-radius: 1.75rem;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos en los extremos */
+  height: 70px;
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.elemento-final {
+  margin-left: 3rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+
+  width: 150px;
+  border-radius: 41px;
+  font-weight: 600;
+  font-size: 22px;
+  border: 1px solid #de4a97;
+}
+
+.elemento-centro {
+  margin: 0 auto;
+  color: white;
+  font-family: "Lalezar", cursive;
+  font-size: 50px;
+  /* Centra horizontalmente el elemento en el centro */
+}

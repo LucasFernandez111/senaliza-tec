@@ -1,0 +1,9 @@
+.diccionario {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

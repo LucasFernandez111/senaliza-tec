@@ -1,0 +1,1 @@
+Juego de identificación de errores: presenta una oración o frase en lenguaje de señas con un error. El jugador debe identificar el error y corregirlo.

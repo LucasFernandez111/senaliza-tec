@@ -1,0 +1,14 @@
+.cont-complet-game {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.opts-complet-game {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}

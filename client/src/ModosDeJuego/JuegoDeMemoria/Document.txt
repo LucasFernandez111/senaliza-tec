@@ -1,0 +1,1 @@
+Juego de memoria: crea un juego de memoria con imágenes de diferentes señas y sus correspondientes palabras. El jugador debe recordar dónde se encuentra cada imagen y su correspondiente palabra.

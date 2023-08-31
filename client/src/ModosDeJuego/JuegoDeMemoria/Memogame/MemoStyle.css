@@ -1,0 +1,87 @@
+.info-game {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid #de4a97;
+  padding: 10px;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.memo-game-cont {
+  display: flex;
+  align-items: center;
+}
+
+.info-game > p {
+  align-items: center;
+  font-size: 40px;
+}
+
+.blog-post {
+  display: flex;
+  align-items: center;
+  max-width: 90rem;
+  width: 600px;
+  height: 16rem;
+  border: solid 3px rgba(252, 7, 129, 0.639);
+  background: linear-gradient(23, 3, 0);
+  padding: 0.7rem;
+
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+}
+
+.blog-post_img {
+  position: absolute;
+  min-width: 25rem;
+  max-width: 25rem;
+  height: 14rem;
+
+  transform: translateX(-14rem);
+}
+
+.blog-post_img img {
+  display: block;
+  width: 100%;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.358);
+  border: solid rgba(255, 255, 255, 0.558) 4px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.blog-post_title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(21, 85, 168);
+}
+.blog-post_info {
+  width: 100%;
+  height: 80%;
+
+  flex-direction: column;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.blog-post_info p {
+  font-size: 20px;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 50px;
+  font-weight: 100;
+  width: 80%;
+}
+
+.time span {
+  color: #de4a97;
+}
