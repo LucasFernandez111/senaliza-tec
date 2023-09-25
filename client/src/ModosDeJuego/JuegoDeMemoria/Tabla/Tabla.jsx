@@ -1,14 +1,18 @@
 import Blocke from "../Blocke/Blocke";
 
-export default function Tabla({ animacion, handleClick, blockes, style = none }) {
-
+export default function Tabla({
+  animacion,
+  handleClick,
+  blockes,
+  style = none,
+}) {
   const estiloTabla = {
-    display: 'grid',
+    display: "grid",
     gridTemplateColumns: `repeat(${style.grid_repet}, 150px)`,
-    gridGap: '10px',
+    gridGap: "10px",
     maxWidth: style.maxWidth,
-    margin: 'auto',
-  }
+    margin: "auto",
+  };
 
   return (
     <main style={estiloTabla}>

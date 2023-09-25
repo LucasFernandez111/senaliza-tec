@@ -1,0 +1,21 @@
+/* Estilos para navegadores WebKit (Chrome, Safari) */
+html::-webkit-scrollbar {
+  width: 0rem; /* Ajusta el ancho de la barra de desplazamiento */
+  background: transparent; /* Establece el fondo transparente */
+}
+
+/* Estilos para el pulgar (scroll thumb) */
+html::-webkit-scrollbar-thumb {
+  background: transparent; /* Hace que el pulgar sea transparente */
+}
+
+/* Estilos para navegadores Firefox */
+html {
+  scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
+  scrollbar-color: transparent transparent; /* Color de la barra y el pulgar transparente */
+}
+
+/* Estilos para Edge y otros navegadores basados en Chromium */
+html::-webkit-scrollbar-track {
+  background-color: transparent; /* Fondo de la barra de desplazamiento transparente */
+}

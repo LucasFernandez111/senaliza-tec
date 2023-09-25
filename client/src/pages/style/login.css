@@ -1,0 +1,136 @@
+.box-terminos {
+  margin-top: 60px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container2-login {
+  background-color: #151316;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Opcional: ajusta la altura del contenedor */
+}
+.error {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 320px;
+  padding: 12px;
+  display: flex;
+
+  background-color: #de4a97;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px -3px #111;
+}
+.box-checked {
+  position: relative;
+  left: 480px;
+  bottom: 30px;
+}
+
+.error__icon {
+  width: 20px;
+  height: 20px;
+  transform: translateY(-2px);
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.imagen-input {
+  width: 30px;
+}
+
+.error__icon path {
+  fill: #fff;
+}
+
+.img-checked {
+  width: 30px;
+  height: 30px;
+}
+
+.error__title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+
+.error__close {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.error__close path {
+  fill: #fff;
+}
+
+/* input login */
+
+.group {
+  display: flex;
+  line-height: 30px;
+  align-items: center;
+  position: relative;
+  max-width: 500px;
+}
+
+.input {
+  width: 100%;
+  height: 45px;
+  line-height: 30px;
+  padding: 0 5rem;
+  padding-left: 3rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  background-color: #151316;
+  color: white;
+  border: #de4a97 solid 1px;
+  transition: 0.5s ease;
+}
+
+.input::placeholder {
+  color: #b894b8;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: rgb(242, 129, 248);
+  background-color: #151316;
+  box-shadow: 0 0 0 5px rgba(216, 58, 179, 0.3);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: none;
+  width: 1rem;
+  height: 1rem;
+}
+
+.box-form {
+  gap: 20px;
+  flex-direction: column;
+
+  justify-content: center;
+  display: flex;
+}
+
+.button-cuenta {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border-radius: 41px;
+  font-size: 20px;
+  background-color: #151316;
+
+  width: 302.76px;
+  height: 44px;
+  border-color: #de4a97;
+}

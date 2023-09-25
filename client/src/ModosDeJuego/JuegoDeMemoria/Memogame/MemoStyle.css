@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
   border: 3px solid #de4a97;
   padding: 10px;
   border-radius: 10px;
@@ -13,20 +14,28 @@
 .memo-game-cont {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.icono {
+  background-color: #ff0084;
+  position: fixed;
+
+  z-index: 10;
 }
 
 .info-game > p {
-  align-items: center;
   font-size: 40px;
 }
-
+.div-inicial {
+  background-color: violet;
+}
 .blog-post {
   display: flex;
   align-items: center;
-  max-width: 90rem;
-  width: 600px;
-  height: 16rem;
-  border: solid 3px rgba(252, 7, 129, 0.639);
+  justify-content: center;
+  height: 300px;
+  width: 800px;
+  border: solid 3px rgb(252, 7, 93);
   background: linear-gradient(23, 3, 0);
   padding: 0.7rem;
 
@@ -34,38 +43,16 @@
   border-radius: 0.8rem;
 }
 
-.blog-post_img {
-  position: absolute;
-  min-width: 25rem;
-  max-width: 25rem;
-  height: 14rem;
-
-  transform: translateX(-14rem);
-}
-
-.blog-post_img img {
-  display: block;
-  width: 100%;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.358);
-  border: solid rgba(255, 255, 255, 0.558) 4px;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.8rem;
-}
-
 .blog-post_title {
-  font-size: 2.5rem;
+  font-size: 50px;
   text-align: center;
-  color: rgb(21, 85, 168);
+  color: #fa86c4;
+  /* color: rgb(192, 106, 253); */
 }
 .blog-post_info {
-  width: 100%;
-  height: 80%;
-
-  flex-direction: column;
   display: flex;
-  align-items: end;
-  justify-content: end;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .blog-post_info p {
@@ -73,15 +60,16 @@
 }
 
 .time {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   font-size: 50px;
   font-weight: 100;
-  width: 80%;
+  width: 100%;
 }
 
 .time span {
-  color: #de4a97;
+  color: #ff0084;
 }

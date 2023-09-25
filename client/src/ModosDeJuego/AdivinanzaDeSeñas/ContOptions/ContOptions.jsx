@@ -1,9 +1,14 @@
 import OptionBtn from "../OptionBtn/OptionBtn";
 
-export default function ContOptions({ options, juegoTerminado, handleClick }) {
+export default function ContOptions({
+  text,
+  options,
+  juegoTerminado,
+  handleClick,
+}) {
   return (
     <div className="opts-adivina-game">
-      <h2>Seleccione la vocal que corresponda a la seña</h2>
+      <h2>{text}</h2>
 
       {options.map((option) => (
         <OptionBtn

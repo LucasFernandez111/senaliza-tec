@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import "./boton.css";
-export function BtnInicio({ name, estilo }) {
+import "../../../pages/style/homedemo.css";
+export function BtnInicio({ name, estilo, path }) {
   return (
-    <Link to={"/home"} className={estilo}>
+    <Link to={path} className={estilo}>
       <span>{name}</span>
     </Link>
   );

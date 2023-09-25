@@ -5,10 +5,10 @@ import "animate.css";
 import { UserContext } from "../context/UserProvider";
 
 export default function HomePage() {
-  const { reset } = useContext(UserContext);
+  const { resetBarr } = useContext(UserContext);
 
   useEffect(() => {
-    reset();
+    resetBarr()
   }, []);
 
   return (

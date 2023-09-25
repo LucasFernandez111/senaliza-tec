@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import './JuegoDeCompletar.css'
+import "./JuegoDeCompletar.css";
+import interrogacion from "../../assets/interrogacion.svg";
 
 const JuegoCompletar = ({ contenido, gameComplete, reset, gameOver }) => {
   const [oracion, setOracion] = useState("");
@@ -47,8 +48,11 @@ const JuegoCompletar = ({ contenido, gameComplete, reset, gameOver }) => {
 
   return (
     <div className="cont-complet-game">
-      <p className="titulo-complet-game">Completa la Oracion</p>
-      <h1 className="oracion-complet-game">{oracion}</h1>
+      <div className="box-oracion">
+        <img src={interrogacion} alt="" />
+
+        <h1 className="oracion-complet-game">{oracion}</h1>
+      </div>
       <div className="opts-complet-game">
         {opciones.map((opcion, index) => (
           <button

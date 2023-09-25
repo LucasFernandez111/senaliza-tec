@@ -1,0 +1,53 @@
+.div-inicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120%;
+  height: 120%;
+  background-color: #151316;
+  gap: 30px;
+}
+
+.div-seña {
+  border: solid #de4a97 3px;
+  border-radius: 10px;
+}
+
+.div-operaciones {
+  display: flex;
+}
+
+.img-operaciones {
+  width: 240px;
+  height: 240px;
+}
+.img-result-correcto {
+  border: solid #7ab72e 3px;
+  border-radius: 10px;
+  width: 240px;
+  height: 240px;
+}
+.img-result-icorrecto {
+  border: solid #962222 3px;
+  border-radius: 10px;
+  width: 240px;
+  height: 240px;
+}
+.div-signo {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  color: "white";
+}
+
+.div-opciones-operaciones {
+  display: flex;
+}
+
+.div-resultado {
+  border: solid #de4a97 3px;
+
+  width: 240px;
+  height: 240px;
+}

@@ -2,9 +2,9 @@ import React from "react";
 import NavBar from "../components/components-pract-page/NavBar";
 import "./style/Abecedario.css";
 import { Link } from "react-router-dom";
-
+import { imagenesAbc } from "../Contenido/abecedario.js";
 const Abecedario = () => {
-  const abc = new Array(27).fill("");
+  const imagenesAbcCopy = imagenesAbc;
 
   return (
     <div className="home-page">
@@ -12,7 +12,7 @@ const Abecedario = () => {
         <NavBar></NavBar>
       </nav>
       <div className="contenedor">
-        <Link to={"/"} className="elemento-final">
+        <Link to={"/home"} className="elemento-final">
           Regresar
         </Link>
 
@@ -21,8 +21,12 @@ const Abecedario = () => {
 
       <div className="container">
         <section className="card-section">
-          {abc.map((e, i) => {
-            return <div className="card">{i}</div>;
+          {imagenesAbcCopy.map((e, i) => {
+            return (
+              <div className="card">
+                <img key={i} src={e} alt="" />
+              </div>
+            );
           })}
         </section>
       </div>

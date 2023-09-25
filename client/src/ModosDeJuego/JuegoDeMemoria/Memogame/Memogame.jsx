@@ -61,7 +61,7 @@ export default function Memogame({ contenido, gameComplete, style }) {
           type: item.type,
         }))
       );
-    }, 1750);
+    }, 3000);
   };
 
   const arrayRevuelto = (a) => {
@@ -107,17 +107,20 @@ export default function Memogame({ contenido, gameComplete, style }) {
   return (
     <div className="memo-game-cont">
       {!mostrarJuego && (
-        <div class="blog-post">
-          <div class="blog-post_img">
-            <img src={PreviewMemo} alt="" />
-          </div>
-          <div class="blog-post_info">
-            <div>
-              <h1 class="blog-post_title">JUEGO DE MEMORIA</h1>
-            </div>
-            <p>Indique la palabra con su respectiva seña.</p>
-            <div className="time">
-              <span>{time}</span>
+        <div className="div-inicial">
+          <div className="blog-post">
+            <div className="blog-post_info">
+              <div className="blog-title">
+                <h1 className="blog-post_title">JUEGO DE MEMORIA</h1>
+              </div>
+              <div style={{ width: "100%", textAlign: "center" }}>
+                <p style={{ fontSize: "25px" }}>
+                  Indique la imagen con su respectiva seña.
+                </p>
+              </div>
+              <div className="time">
+                <span>{time}</span>
+              </div>
             </div>
           </div>
         </div>

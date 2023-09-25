@@ -1,4 +1,4 @@
-.opt-btn-adivina-game{
+.opt-btn-adivina-game {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -12,12 +12,16 @@
   margin: 5px;
   font-size: 28px;
   border-radius: 5px;
+  transition: all 0.4s ease;
+}
+.opt-btn-adivina-game:hover {
+  transform: scale(1.05);
 }
 
-.opt-btn-adivina-game-false{
+.opt-btn-adivina-game-false {
   background-color: red;
 }
 
-.opt-btn-adivina-game-true{
+.opt-btn-adivina-game-true {
   background-color: green;
 }

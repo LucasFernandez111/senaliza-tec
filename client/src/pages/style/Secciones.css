@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Rubik:wght@400;600&display=swap");
+
+.div-principal {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.div-manejador-secciones {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 25px;
+  width: 90%;
+  height: 60%;
+}
+
+.secciones {
+  height: 12%;
+  border-radius: 13px;
+  background: #2F2C34;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding-left: 5px;
+  transition: all 0.4s;
+}
+/*
+.div-manejador-secciones .secciones:hover .borde-cian {
+  background-color: #235293;
+  height: 100%;
+  width: 15px;
+  margin-right: 7px;
+  border-radius: 13px;
+}
+*/
+.secciones:hover {
+  border-left: 15px solid #235293;
+  background-color: #2f2c34;
+  border-radius: 13px;
+}
+
+.secciones a {
+  font-family: "Lalezar", cursive;
+  font-size: 30px;
+}
+
+.linea-seccion {
+  background-color: #302e35;
+  width: 2px;
+  height: 100%;
+  margin-left: 4px;
+}

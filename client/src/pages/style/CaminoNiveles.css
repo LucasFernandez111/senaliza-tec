@@ -1,77 +1,48 @@
-.cont-levels-path {
-  position: fixed;
-  height: 100%;
-  width: 70%;
-  display: flex;
-  align-content: end;
-
-  justify-content: end;
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+.link-level {
+  background-color: #de4a97;
+  border: #de4a97 solid 4px;
+  border-radius: 6px;
 }
 
 .levels-path {
   flex-direction: column;
   display: flex;
   align-content: end;
+  width: 100%;
   height: 100%;
-  margin-top: 30px;
-  width: 75%;
-  overflow-y: auto;
-  padding: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
-.title-dif-one {
+
+.title-dif {
   background: linear-gradient(269.84deg, #de4a97 2.71%, #622444 123.71%);
-  width: 500px;
+  width: 80%;
+  margin: auto;
   height: 59px;
   border-radius: 16px 16px 0px 0px;
+  text-align: start;
 }
 
-.title-one,
-.title-two,
-.title-tree {
-  font-size: 24px;
+.title {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 5px 20px;
 }
 
-.title-dif-tree,
-.title-dif-two {
-  background: linear-gradient(
-    270.24deg,
-    #8a8a8a -28.51%,
-    rgba(129, 133, 138, 0.078125) 142.76%
-  );
-  width: 500px;
-  height: 59px;
-  border-radius: 16px 16px 0px 0px;
-  text-align: center;
-}
-.conjunto {
-  padding: 0px 20px;
-  display: flex;
-  flex-direction: row;
-  width: 25%;
-  height: 100%;
-  align-items: center;
-  justify-content: space-around;
-}
-.sub-cont {
-  height: 50%;
-}
-
-.path-cap-one,
-.path-cap-two,
-.path-cap-tree {
+.path-cap {
   display: flex;
   flex-direction: column;
   align-items: start;
   margin: auto;
   padding: 20px 0px;
+  margin: auto;
+  width: 100%;
 }
 
 .levels-path::-webkit-scrollbar {
   width: 8px; /* Ajusta el ancho de la barra de desplazamiento */
-}
-.block-icon {
-  width: 25px;
-  height: 25px;
 }
 
 .levels-path::-webkit-scrollbar-thumb {
@@ -83,11 +54,23 @@
   background: transparent;
 }
 
-.btn-level-cont {
+.btn-level-cont-izquierda {
   height: 165px;
   padding-top: 10px;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: start;
+  margin-left: 25%;
+  align-items: center;
+}
+
+.btn-level-cont-derecha {
+  height: 165px;
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
   align-items: center;
 }
 
@@ -98,7 +81,8 @@
 
 .rigth {
   position: relative;
-  left: 170px;
+  left: 20px;
+  background-color: black;
 }
 
 .cont-info-level {
@@ -124,19 +108,7 @@
   font-size: 16px;
   height: 75%;
 }
-
-.btn-niveles {
-  padding: 30px 40px;
-  border-radius: 160px;
-  border: 0;
-  background-color: #de4a97;
-  letter-spacing: 1.5px;
-  font-size: 28px;
-  transition: all 0.3s ease;
-  box-shadow: #b13b78 0px 10px 0px 0px;
-  color: hsl(0, 0%, 100%);
-}
-
+/*
 .btn-niveles:hover {
   box-shadow: #b13b78 0px 7px 0px 0px;
   transform: translateY(3px);
@@ -147,44 +119,58 @@
   transform: translateY(10px);
   transition: 200ms;
 }
+*/
 
 .prox {
   cursor: no-drop;
-  background-color: #72475f;
 }
 
 .prox:hover {
   background-color: #72475f;
 }
 
-.center {
-  transform: translateX(120px);
+/* BOTON DERECHA */
+.btn-niveles-derecha {
+  padding: 30px 40px;
+  border-radius: 160px;
+  border: 0;
+  background-color: #de4a97;
+  font-size: 28px;
+  margin-right: 20%;
+  transition: all 0.3s ease;
+  box-shadow: #b13b78 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
 }
 
-.center:hover {
+.btn-niveles-derecha:hover {
   box-shadow: #b13b78 0px 7px 0px 0px;
-  transform: translateX(120px) translateY(3px);
+  transform: translateY(3px);
 }
 
-.center:active {
+.btn-niveles-derecha:active {
   box-shadow: #b13b78 0px 0px 0px 0px;
-  transform: translateX(120px) translateY(10px);
-  transition: 200ms;
+  transform: translateY(10px);
+}
+/* BOTONES IZQUIERDA */
+.btn-niveles-izquierda {
+  padding: 30px 40px;
+  border-radius: 160px;
+  border: 0;
+  background-color: #de4a97;
+  font-size: 28px;
+  transition: all 0.3s;
+  box-shadow: #b13b78 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
 }
 
-.end {
-  transform: translateX(300px);
-}
-
-.end:hover {
+.btn-niveles-izquierda:hover {
   box-shadow: #b13b78 0px 7px 0px 0px;
-  transform: translateX(300px) translateY(3px);
+  transform: translateY(3px);
 }
 
-.end:active {
+.btn-niveles-izquierda:active {
   box-shadow: #b13b78 0px 0px 0px 0px;
-  transform: translateX(300px) translateY(10px);
-  transition: 200ms;
+  transform: translateY(10px);
 }
 
 .block {
@@ -199,6 +185,22 @@
 .block:active {
   box-shadow: #585858 0px 0px 0px 0px;
   transition: 200ms;
+}
+
+.cont-levels-path {
+  width: 100%;
+  height: 100%;
+}
+
+.title-seccion{
+  width: 90%;
+  margin: auto;
+  letter-spacing: 2px;
+  font-size: 48px;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding: 5px 0px;
+  font-family: "Lalezar", cursive;
 }
 
 /* Diccionario */

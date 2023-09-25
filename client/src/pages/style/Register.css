@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputs {
+  font-size: 20px;
+  border: solid 1px;
+  border-color: #676767;
+  border-radius: 41px;
+  display: block;
+  width: 302.76px;
+  height: 44px;
+  background-color: #181818;
+  margin: 0;
+  padding: 2px 10px;
+}
+
+.submit-register {
+  font-size: 20px;
+  border: solid 1px;
+  border-color: #676767;
+  border-radius: 41px;
+  display: block;
+  width: 302.76px;
+  height: 44px;
+  background-color: #181818;
+  margin-right: 15px;
+  padding: 2px 10px;
+}
+
+.title-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingresar-login {
+  font-size: 40px !important;
+  font-family: "Lalezar", cursive;
+  line-height: 62.68px;
+  letter-spacing: 1px;
+}
+
+.inputs::placeholder {
+  color: #ffff;
+  opacity: 50%;
+  font-weight: 400;
+  font-family: "Rubik";
+  font-size: 20px;
+  line-height: 23.7px;
+  width: 256px;
+  height: 24px;
+  padding-top: 9px;
+  padding-left: 25px;
+}
+
+.container2 {
+  background-color: #151316;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Opcional: ajusta la altura del contenedor */
+}
+
+.ocultar {
+  visibility: hidden;
+}
+
+#submit {
+  cursor: pointer;
+  margin-top: 25px;
+  margin-left: -1px;
+  background-color: #de4a97;
+  border-color: #de4a97;
+  transition: all 0.4s ease;
+}
+
+.submit-register {
+  margin-left: 10px !important;
+}
+
+#back {
+  margin-top: 15px;
+  border-color: #de4a97;
+}
+
+#span {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Lalezar;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .inputs {
+    font-size: 24px;
+    height: 48px;
+  }
+
+  .inputs::placeholder {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+}
+
+/* Estilos para pantallas pequeñas, como teléfonos móviles */
+@media screen and (max-width: 480px) {
+  .inputs {
+    font-size: 16px;
+    height: 36px;
+  }
+
+  .inputs::placeholder {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
+.error-register {
+  margin-top: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+}
+
+.box-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.button-cuenta {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border-radius: 41px;
+  font-size: 20px;
+  background-color: #151316;
+
+  width: 302.76px;
+  height: 44px;
+  border-color: #de4a97;
+}

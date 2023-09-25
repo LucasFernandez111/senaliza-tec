@@ -1,8 +1,15 @@
 import React, { createContext, useState, useEffect } from "react";
+import axios from "axios";
 
 const UserContext = createContext();
 
+//Register
+
+//
+
 function UserProvider({ children }) {
+  const [registerExitoso, setRegister] = useState(false);
+
   const [leccionesDesbloqueadas, setLeccionesDesbloqueadas] = useState(() => {
     const storedLecciones = localStorage.getItem("leccionesDesbloqueadas");
     return storedLecciones ? JSON.parse(storedLecciones) : [0, 1];
@@ -23,7 +30,16 @@ function UserProvider({ children }) {
     );
     return storedNivelesDesbloqueados
       ? JSON.parse(storedNivelesDesbloqueados)
-      : [1];
+      : [0];
+  });
+  const [nameUser, setNameUser] = useState(() => {
+    const storedUserName = localStorage.getItem("userName");
+
+    return storedUserName ? JSON.parse(storedUserName) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("userName", JSON.stringify(nameUser)), [nameUser];
   });
 
   useEffect(() => {
@@ -51,12 +67,16 @@ function UserProvider({ children }) {
     sessionStorage.setItem("barraDeProgreso", JSON.stringify(barraDeProgreso));
   }, [barraDeProgreso]);
 
-  const desbloquearLeccion = (id) => {
-    setLeccionesDesbloqueadas([...leccionesDesbloqueadas, id]);
+  const registro = (validacion) => {
+    setRegister(validacion);
   };
 
-  const desbloquearModoJuego = (id) => {
-    setModosJuegoDesbloqueados([...modosJuegoDesbloqueados, id]);
+  const desbloquearLeccion = (ids) => {
+    setLeccionesDesbloqueadas(leccionesDesbloqueadas.concat(ids));
+  };
+
+  const desbloquearModoJuego = (ids) => {
+    setModosJuegoDesbloqueados(modosJuegoDesbloqueados.concat(ids));
   };
 
   const incrementarBarra = () => {
@@ -67,14 +87,34 @@ function UserProvider({ children }) {
     setBarraDeProgreso(barraDeProgreso - 12);
   };
 
-  const desbloquearNiveles = (nivel) => {
-    setNivelesDesbloqueados([...nivelesDesbloqueados, nivel]);
+  const desbloquearNiveles = async (nivel, user) => {
+    setNivelesDesbloqueados(nivelesDesbloqueados.concat(nivel));
+    console.log(user);
+    const progreso = { nivel: nivel, user: user };
+    try {
+      const respuesta = await axios.post("http://localhost:3000/progreso", [
+        nivel,
+        user,
+      ]);
+    } catch (error) {
+      console.error("Error al enviar datos:", error);
+    }
+  };
+
+  const insertUserName = (user) => {
+    setNameUser([user]);
   };
 
   const reset = () => {
+    setNameUser([]);
     setBarraDeProgreso(12);
     setLeccionesDesbloqueadas([0, 1]);
     setModosJuegoDesbloqueados([0]);
+    setNivelesDesbloqueados([0]);
+  };
+
+  const resetBarr = () => {
+    setBarraDeProgreso(12);
   };
 
   const userState = {
@@ -88,6 +128,11 @@ function UserProvider({ children }) {
     nivelesDesbloqueados,
     desbloquearNiveles,
     reset,
+    resetBarr,
+    insertUserName,
+    nameUser,
+    registro,
+    registerExitoso,
   };
 
   return (
