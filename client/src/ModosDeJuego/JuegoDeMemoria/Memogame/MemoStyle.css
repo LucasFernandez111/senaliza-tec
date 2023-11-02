@@ -1,0 +1,73 @@
+.info-game {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  border: 3px solid #de4a97;
+  padding: 10px;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.memo-game-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icono {
+  background-color: #ff0084;
+  position: fixed;
+
+  z-index: 10;
+}
+
+.info-game > p {
+  font-size: 40px;
+}
+
+.blog-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 800px;
+  border: solid 3px rgb(252, 7, 93);
+
+  padding: 0.7rem;
+
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+}
+
+.blog-post_title {
+  font-size: 50px;
+  text-align: center;
+  color: #fa86c4;
+  /* color: rgb(192, 106, 253); */
+}
+.blog-post_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog-post_info p {
+  font-size: 20px;
+}
+
+.time {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 50px;
+  font-weight: 100;
+  width: 100%;
+}
+
+.time span {
+  color: #ff0084;
+}

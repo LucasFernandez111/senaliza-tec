@@ -1,0 +1,49 @@
+.opts-complet-game {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .cont-complet-game {
+    width: 90%;
+  }
+}
+
+/* Media queries para pantallas aún más pequeñas, por ejemplo, dispositivos móviles */
+@media (max-width: 480px) {
+  .cont-complet-game {
+    width: 100%;
+  }
+
+  .opts-complet-game {
+    flex-direction: column; /* Cambia la dirección de los elementos */
+  }
+}
+
+.box-oracion {
+  border: solid #de4a97 5px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+
+  width: 101%;
+}
+
+.box-oracion img {
+  background-color: #de4a97;
+  border: #de4a97 solid 20px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.box-oracion h1 {
+  font-size: 40px;
+  margin-left: 5px;
+  width: 100%;
+}
+.box-interrogacion {
+  background-color: #de4a97;
+}

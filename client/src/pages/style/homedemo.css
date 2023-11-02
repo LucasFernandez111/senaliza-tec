@@ -1,0 +1,44 @@
+.box-demo {
+  margin-bottom: 7px;
+}
+
+.box-homedemo {
+  margin-bottom: 30px;
+}
+.box-ingresar {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 46px;
+  width: 302px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: 0;
+  border: #de4a97 solid 3px;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.box-ingresar:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.box-ingresar:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: scale(0.9);
+  transition: 100ms;
+}

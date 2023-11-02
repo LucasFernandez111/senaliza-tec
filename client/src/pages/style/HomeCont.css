@@ -1,0 +1,67 @@
+.div-manejador {
+  /* background-color: red; */
+  width: 95%;
+  margin: 40px 0px;
+  display: flex;
+  justify-content: end;
+}
+
+.div-camino {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-secciones {
+  height: 100%;
+  width: 33.3%;
+}
+
+.div-abc-tuto {
+  /* background-color: blue; */
+  height: 100%;
+  width: 30%;
+}
+.cont-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 35px;
+}
+
+.msj-tuto{
+  position: fixed;
+  z-index: 9;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(19, 19, 19, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-cont{
+  width: 360px;
+  height: 140px;
+  border: 5px solid #de4a97;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: rgb(19, 19, 19);
+  bottom: 0px;
+}
+
+.text-cont > p {
+  text-align: center;
+  margin: auto;
+}
+
+.btn-info-tuto{
+  text-align: center;
+  padding: 3px;
+  height: 28px;
+  width: 24px;
+  border-radius: 2px;
+  background-color: #74A9DB;
+}

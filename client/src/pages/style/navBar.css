@@ -1,0 +1,97 @@
+.nav-bar-home {
+  background-color: #010101;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  z-index: 10;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.nav-bar-home-largo {
+  background-color: #010101;
+  width: 100%;
+  display: flex;
+  gap: -100px;
+  flex-direction: row;
+
+  height: 50px;
+  position: fixed;
+  z-index: 10;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.nav-link {
+  padding: 5px;
+  border: #de4a97 solid 2px;
+  border-radius: 7px;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+
+.nav-link:hover{
+  background-color: #de4a97;
+}
+
+.nav-bar-logo > img {
+  height: 44px;
+}
+
+.nav-bar-user {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-user-largo {
+  display: flex;
+  width: 10%;
+  max-width: 10%;
+  align-items: center;
+  margin-right: 35px;
+}
+
+.navbar-logo-user {
+  width: 30px;
+  margin-right: 3px;
+}
+
+.box-navbar-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 13px;
+ 
+  justify-content: space-between;
+}
+
+.nav-bar-user span {
+  font-size: 25px;
+  font-family: "Lalezar", cursive;
+}
+.nav-bar-user-largo span {
+  font-size: 25px;
+  font-family: "Lalezar", cursive;
+}
+
+.navbar-logo-user-largo {
+  width: 20px;
+}
+
+.navbar-logo-user-largo span {
+  font-size: 25px;
+  font-family: "Lalezar", cursive;
+}
+
+.nav-bar-count {
+  display: flex;
+  margin: 8px;
+}
+
+.navbar-logout{
+ width: 30px;
+ height: 30px;
+}

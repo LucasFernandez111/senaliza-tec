@@ -1,0 +1,40 @@
+.img-fle {
+  width: 250px;
+  border: 2px solid grey;
+  border-radius: 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.select{
+    border: 3px solid rgba(230, 5, 129, 0.638);
+}
+
+.complete{
+    border: 3px solid green;
+}
+
+.nocomplete{
+    border: 3px solid red;
+}
+
+.img-fle:hover {
+  box-shadow: rgba(230, 5, 129, 0.638) 0 0 8px;
+  transform: scale(1.05);
+}
+.img-fle:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.btn-fle {
+  width: 250px;
+  padding: 20px 40px;
+}
+
+.cont-game-fle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}

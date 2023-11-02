@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Rubik:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+}
+
+.abc-text-home > h5 {
+  font-family: "Lalezar", cursive;
+  font-family: "Rubik", sans-serif;
+}
+
+.home-page {
+  height: 100vh;
+}
+
+.nav-bar-home {
+  background-color: #010101;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  position: fixed;
+  z-index: 10;
+}
+
+.nav-bar-logo > img {
+  height: 44px;
+}
+
+.nav-bar-count {
+  display: flex;
+  margin: 8px;
+}
+
+.star-count {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  margin: auto 15px;
+}
+
+.star-count > p {
+  font-weight: 600;
+}
+
+.start-icon {
+  padding: 5px;
+}
+
+.nav-bar-count > img {
+  margin: auto;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.cont-home {
+  background-color: #151316;
+  height: 100vh;
+  position: relative;
+}
+
+.abc-home {
+  position: fixed;
+  height: 60px;
+  width: 145px;
+  border: 2px solid #de4a97;
+  border-radius: 17px;
+  right: 10px;
+  top: 75px;
+  display: flex;
+}
+
+.icon-abc-home {
+  width: 60px;
+  background-color: #de4a97;
+  border-radius: 10px;
+}
+
+.lib-cont {
+  width: 23px;
+  height: 41px;
+  margin: 8px auto;
+  border: solid 3px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.line1 {
+  width: 6px;
+  border: solid 2px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 7px;
+}
+
+.line2 {
+  width: 21px;
+  border: solid 2px;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.line3 {
+  width: 21px;
+  border: solid 2px;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 4px;
+}
+
+.abc-text-home {
+  width: 80px;
+  margin: auto 5px;
+}
+
+.abc-text-home > h5 {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.abc-text-home > p {
+  font-weight: 400;
+  font-size: 8px;
+}
+
+.help-home {
+  border-radius: 50%;
+  border: solid 3px;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 31px;
+  right: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-help {
+  font-size: 20px;
+}
+
+.button-cont {
+  background-color: #151316;
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  z-index: 9;
+}
+
+.button-box {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  border-radius: 41px;
+  font-weight: 600;
+  font-size: 26px;
+  border: 1px solid #de4a97;
+}
+
+.next-btn {
+  background-color: #de4a97;
+}
+
+.return-btn {
+  background-color: #151316;
+}
+
+.close-level {
+  position: fixed;
+  top: 172px;
+  left: 15%;
+}
+
+.cont-top {
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  z-index: 9;
+}
+
+.close-level > img {
+  width: 45px;
+}
+
+.bar-progress {
+  height: 35px;
+  width: 50%;
+  position: fixed;
+  top: 172px;
+  left: 25%;
+  background-color: #0b2950;
+  border-radius: 14px;
+}
+
+.leccion-cont, .game-cont{
+  padding: 5px;
+  position: fixed;
+  left: 25%;
+  background-color: #423b5078;
+  width: 50%;
+  height: 600px;
+  top: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.leccion-cont::-webkit-scrollbar {
+  width: 5px; /* Ajusta el ancho de la barra de desplazamiento */
+}
+
+.leccion-cont::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Establece el color de la barra de desplazamiento */
+}
+
+.leccion-cont > h1 {
+  position: relative;
+  top: 25px;
+  left: 25px;
+  font-size: 48px;
+}
+
+.leccion-cont > p {
+  position: relative;
+  top: 50px;
+  font-size: 28px;
+  padding: 10px;
+  margin: 0px 10px;
+}

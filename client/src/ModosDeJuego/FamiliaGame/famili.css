@@ -1,0 +1,31 @@
+.img-fa {
+  width: 300px;
+}
+
+.opt-btn-fa {
+  width: 220px;
+  height: 50px;
+  background-color: #423b5078;
+  transition: all 0.5s ease;
+  font-size: 22px;
+}
+
+.opt-btn-fa:hover {
+  box-shadow: rgba(230, 5, 129, 0.638) 0 0 8px;
+  transform: scale(1.05);
+}
+.opt-btn-fa:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.title-fa{
+    font-size: 48px;
+}
+
+.cont-famili-game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
